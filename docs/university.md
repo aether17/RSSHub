@@ -288,6 +288,16 @@ pageClass: routes
 
 </Route>
 
+### 党委学生工作部
+
+<Route author="Fatpandac" example="/bnu/dwxgb/xwzx/tzgg" path="/bnu/dwxgb/:category/:type" :paramsDesc="['大分类', '子分类，例子如下']">
+
+`https://dwxgb.bnu.edu.cn/xwzx/tzgg/index.html`\
+则对应为\
+`/bnu/dwxgb/xwzx/tzgg`
+
+</Route>
+
 ### 信息学院通知
 
 <Route author="wzc-blog" example="/bjfu/it/xyxw" path="/bjfu/it/:type" :paramsDesc="['通知类别']">
@@ -1811,7 +1821,7 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 
 ### 教务处
 
-<Route author="arcosx Seiry qrzbing Xm798" example="/nuaa/jwc/tzgg" path="/nuaa/jwc/:type/:getDescription?" :paramsDesc="['分类名', '是否获取全文']" puppeteer="1">
+<Route author="arcosx Seiry qrzbing Xm798" example="/nuaa/jwc/tzgg/getDescription" path="/nuaa/jwc/:type/:getDescription?" :paramsDesc="['分类名，见下表', '是否获取全文']" puppeteer="1" radar="1">
 
 | 通知公告 | 教学服务 | 教学建设 | 学生培养 | 教学资源 |
 | ---- | ---- | ---- | ---- | ---- |
@@ -1821,7 +1831,7 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 
 ### 研究生院
 
-<Route author="junfengP Seiry Xm798" example="/nuaa/yjsy/tzgg" path="/nuaa/yjsy/:getDescription?" :paramsDesc="['分类名', '是否获取全文']" puppeteer="1">
+<Route author="junfengP Seiry Xm798" example="/nuaa/yjsy/tzgg/getDescription" path="/nuaa/yjsy/:type/:getDescription?" :paramsDesc="['分类名，见下表', '是否获取全文']" puppeteer="1" radar="1">
 
 | 通知公告 | 新闻动态 | 学术信息 | 师生风采 |
 | ---- | ---- | ---- | ---- |
@@ -1831,7 +1841,7 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 
 ### 自动化学院
 
-<Route author="Seiry qrzbing Xm798" example="/nuaa/cae/zhxw" path="/nuaa/cs/:type/:getDescription?" :paramsDesc="['分类名', '是否获取全文']" puppeteer="1">
+<Route author="Xm798" example="/nuaa/cae/zhxw" path="/nuaa/cs/:type/:getDescription?" :paramsDesc="['分类名，见下表', '是否获取全文']" puppeteer="1" radar="1">
 
 | 综合新闻 | 党委行政 | 人事 / 合作 | 研究生培养 | 本科生培养 | 学生工作 | 通知公告 | 学术信息 | 答辩公告 |
 | ---- | ---- | ------- | ----- | ----- | ---- | ---- | ---- | ---- |
@@ -1839,7 +1849,7 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 
 ### 计算机科学与技术学院
 
-<Route author="LogicJake Seiry qrzbing Xm798" example="/nuaa/cs/jxdt" path="/nuaa/cs/:type/:getDescription?" :paramsDesc="['分类名', '是否获取全文']" puppeteer="1">
+<Route author="LogicJake Seiry qrzbing Xm798" example="/nuaa/cs/jxdt" path="/nuaa/cs/:type/:getDescription?" :paramsDesc="['分类名，见下表', '是否获取全文']" puppeteer="1" radar="1">
 
 | 通知公告 | 热点新闻 | 学科科研 | 教学动态 | 本科生培养 | 研究生培养 | 学生工作 |
 | ---- | ---- | ---- | ---- | ----- | ----- | ---- |
@@ -2059,11 +2069,49 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 
 ## 南京艺术学院
 
+### 官网信息
+
+<Route author="evnydd0sf" example="/nua/index/346" path="/nua/index/:type" :paramsDesc="['新闻模块，见下表']" radar="1">
+
+| 新闻模块 | 参数  |
+| ---- | --- |
+| 公告   | 346 |
+| 南艺要闻 | 332 |
+
+</Route>
+
+### 双馨网
+
+<Route author="evnydd0sf" example="/nua/sxw/230" path="/nua/sxw/:type" :paramsDesc="['新闻模块，见下表']" radar="1">
+
+| 新闻模块 | 参数  |
+| ---- | --- |
+| 校园电视 | 230 |
+| 院部动态 | 232 |
+| 动感校园 | 233 |
+| 招就指南 | 234 |
+| 南艺院报 | 236 |
+
+</Route>
+
+### 设计学院
+
+<Route author="evnydd0sf" example="/nua/dc/346" path="/nua/dc/:type" :paramsDesc="['新闻模块，见下表']" radar="1">
+
+| 新闻模块       | 参数      |
+| ---------- | ------- |
+| 学院新闻 NEWS  | news    |
+| 教学 TEACH   | teach   |
+| 项目 PROJECT | project |
+| 党团 PARTY   | party   |
+
+</Route>
+
 ### 研究生处
 
-<Route author="evnydd0sf" example="/nua/gra/1959" path="/nua/gra/:type" :paramsDesc="['种类名，见下表']" radar="1">
+<Route author="evnydd0sf" example="/nua/gra/1959" path="/nua/gra/:type" :paramsDesc="['新闻模块，见下表']" radar="1">
 
-| 种类名   | 参数   |
+| 新闻模块  | 参数   |
 | ----- | ---- |
 | 招生工作  | 1959 |
 | 培养工作  | 1962 |
