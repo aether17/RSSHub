@@ -118,6 +118,10 @@ pageClass: routes
 
 <Route author="tylinux" example="/chiphell/forum/80" path="/chiphell/forum/:forumId" :paramsDesc="['子版块 id，可在子版块 URL 找到']"/>
 
+### 最新帖子
+
+<Route author="aether17" example="/chiphell/latest" path="/chiphell/latest"/>
+
 ## Citavi 中文网站论坛
 
 <Route author="nczitzk" example="/citavi" path="/citavi/:caty" :paramsDesc="['分类名，可在对应分类页 URL 中找到，默认为全部']">
